@@ -509,7 +509,7 @@
           
 
   
-    <div class="comments" id="gitalk-container">
+    <div id="gitalk-container">
     </div>
   
 
@@ -778,27 +778,20 @@
 
 
 
-  
-  
-
-    
-	  <link rel='stylesheet' href="https://yiyeti.cc/usr/themes/veryse/css/gitalk.css">
-      <script src="https://yiyeti.cc/usr/themes/veryse/css/gitalk.min.js"></script>
-      <script type="text/javascript">
-          var gitalk = new Gitalk({
-            clientID:  '',
-            clientSecret: '',
-            id: window.location.pathname,
-            repo: 'jdblog-comments',
-            owner: 'jdblog',
-            admin: 'jdblog',
-            distractionFreeMode: 'true',
-          })
-          gitalk.render('gitalk-container')
-      </script>
-    
-
-  
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '1753c33788bd33b5967e',
+          clientSecret: '7cea4d6ab38f8cdf66ee8dd8b243ec06f052c12b',
+          repo: 'jdblog.github.io',
+          owner: 'jdblog',
+          admin: ['jdblog'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
