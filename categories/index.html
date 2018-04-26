@@ -328,6 +328,9 @@
           
 
   
+    <div id="gitalk-container">
+    </div>
+  
 
 
 
@@ -592,6 +595,29 @@
 
 
 
+
+
+  
+    //_config.yml文件若没有添加enable: true可删除该判断
+
+          
+	  <link rel='stylesheet' href="https://yiyeti.cc/usr/themes/veryse/css/gitalk.css">
+      <script src="https://yiyeti.cc/usr/themes/veryse/css/gitalk.min.js"></script>
+      <script type="text/javascript">
+          var gitalk = new Gitalk({
+            clientID:  '', 
+            clientSecret: '',
+            id: window.location.pathname,
+            repo: 'jdblog-comments', 
+            owner: 'jdblog', 
+            admin: 'jdblog', 
+            distractionFreeMode: 'true',
+          })
+          gitalk.render('gitalk-container')
+      </script>
+    
+
+  
 
 
   
